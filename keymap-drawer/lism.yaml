@@ -20,7 +20,7 @@ layers:
   - {t: J, h: RGUI}
   - {t: K, h: RSHIFT}
   - {t: L, h: RALT}
-  - {t: ;, h: Mark Layer}
+  - {t: ;, h: Mouse Layer}
   - Z
   - X
   - C
@@ -63,7 +63,7 @@ layers:
   - '&mkp MB1'
   - '&mkp MB2'
   - '&msc SCRL_UP'
-  - '&msc SCRL_DOWN'
+  - {t: '&msc SCRL_DOWN', type: held}
   - '&mkp MB4'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -76,7 +76,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -149,7 +149,7 @@ layers:
   - _
   - ''''
   - '"'
-  - {t: \, type: held}
+  - \
   - KP NUMLOCK
   - F11
   - '{'
@@ -165,7 +165,7 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - SPACE
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - ENTER
   - {t: ▽, type: trans}
