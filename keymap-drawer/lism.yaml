@@ -111,8 +111,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - CAPS
-  - CAPS
+  - Caps Word
+  - Caps Word
   - '`'
   - SQT
   - NON US BACKSLASH
