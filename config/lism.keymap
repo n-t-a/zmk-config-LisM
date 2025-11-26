@@ -73,10 +73,10 @@
         kigo {
             display-name = "Number Layer";
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN    &kp POUND     &kp DOLLAR        &kp PERCENT                          &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                    &kp PLUS   &kp EQUAL             &kp DOUBLE_QUOTES      &kp COLON             &kp SEMICOLON
-&trans           &trans         &trans        &trans            &kp CAPS                             &kp CAPS   &kp GRAVE             &kp SQT                &kp NON_US_BACKSLASH  &kp PIPE
-&trans           &trans         &trans        &trans            &trans             &trans    &trans  &trans     &trans                &trans                 &trans                &trans
+&kp EXCLAMATION  &kp AT_SIGN    &kp POUND     &kp DOLLAR        &kp PERCENT                          &kp MINUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE        &kp RIGHT_BRACE
+&kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                    &kp PLUS    &kp EQUAL             &kp DOUBLE_QUOTES      &kp COLON             &kp SEMICOLON
+&trans           &trans         &trans        &trans            &caps_word                           &caps_word  &kp GRAVE             &kp SQT                &kp NON_US_BACKSLASH  &kp PIPE
+&trans           &trans         &trans        &trans            &trans             &trans    &trans  &trans      &trans                &trans                 &trans                &trans
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
