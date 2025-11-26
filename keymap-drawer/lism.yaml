@@ -216,5 +216,5 @@ layers:
   - ''
   - Boot
 combos:
-- p: [30, 35]
+- p: [35, 13]
   k: {t: Number Layer, h: toggle}
