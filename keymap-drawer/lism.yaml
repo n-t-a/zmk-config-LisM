@@ -49,30 +49,26 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - SPACE
-  - Gui+←
-  - Gui+→
-  - '&mkp MB3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+↑
+  - {t: ▽, type: trans}
   - '&mkp MB1'
+  - '&mkp MB3'
   - '&mkp MB2'
-  - '&msc SCRL_UP'
-  - {t: '&msc SCRL_DOWN', type: held}
+  - {type: held}
   - '&mkp MB4'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Gui+↓
-  - ←
-  - ↑
-  - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -83,95 +79,99 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ↓
   - {t: ▽, type: trans}
-  - Gui+W
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc MOVE_Y(15)'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Number Layer:
-  - {t: ▽, type: trans}
-  - '7'
-  - '8'
-  - '9'
-  - '='
-  - F1
-  - F2
-  - F7
-  - F10
-  - RSHIFT
-  - '*'
-  - {t: '4', h: LALT}
-  - {t: '5', h: LSHIFT}
-  - {t: '6', h: LGUI}
-  - {t: '-', h: LCTRL}
-  - '&mkp MB1'
-  - ←
-  - ↑
-  - →
-  - RGUI
-  - /
-  - '1'
-  - '2'
-  - '3'
-  - +
-  - '&mkp MB2'
-  - ''
-  - ↓
-  - ''
-  - RALT
-  - {t: ▽, type: trans}
-  - .
-  - '0'
-  - {t: ▽, type: trans}
-  - LANG2
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: LANG1, type: held}
-  - {t: ▽, type: trans}
-  - Sft+Ctl+TAB
-  - Ctl+TAB
-  - F12
-  Mark Layer:
-  - Sft+Gui+4
-  - F4
-  - (
-  - )
-  - ''
-  - '~'
   - '!'
   - '@'
-  - '#'
+  - POUND
   - $
-  - '&emoji'
-  - F5
-  - '['
-  - ']'
-  - ''
-  - '`'
-  - _
-  - ''''
-  - '"'
-  - \
-  - KP NUMLOCK
-  - F11
+  - '%'
+  - '-'
+  - (
+  - )
   - '{'
   - '}'
-  - ''
-  - '|'
-  - '%'
   - ^
   - '&'
   - '*'
+  - '['
+  - ']'
+  - +
+  - '='
+  - '"'
+  - ':'
+  - ;
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - CAPS
+  - CAPS
+  - '`'
+  - SQT
+  - NON US BACKSLASH
+  - '|'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Mark Layer:
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - '&mkp MB4'
+  - '&mkp MB5'
+  - ↑
+  - '#'
+  - $
+  - /
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - HOME
+  - ←
+  - →
+  - '"'
+  - \
+  - ':'
+  - '1'
+  - '2'
+  - '3'
+  - '%'
+  - END
+  - ↓
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
+  - PERIOD
   - {t: ▽, type: trans}
-  - SPACE
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - ENTER
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Device Layer:
   - ''
   - ''
