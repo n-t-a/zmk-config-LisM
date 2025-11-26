@@ -30,15 +30,15 @@ layers:
   - M
   - ','
   - .
-  - /
+  - {t: /, h: Number Layer}
   - {t: LANGUAGE 2, h: LEFT SHIFT}
   - {t: Mouse Layer, h: toggle}
   - {t: TAB, h: Mouse Layer}
   - Sft+Gui+4
   - {t: SPACE, h: LEFT COMMAND}
   - {t: ESC, h: Mark Layer}
-  - {t: BS, h: Mark Layer}
-  - {t: ENTER, h: Number Layer}
+  - BS
+  - {t: ENTER, h: Mark Layer}
   - Sft+Gui+4
   - F7
   - F10
@@ -116,7 +116,7 @@ layers:
   - '`'
   - SQT
   - NON US BACKSLASH
-  - '|'
+  - {t: '|', type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -124,7 +124,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,3 +215,6 @@ layers:
   - ''
   - ''
   - Boot
+combos:
+- p: [30, 35]
+  k: {t: Number Layer, h: toggle}
