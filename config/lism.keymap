@@ -57,6 +57,31 @@
             bindings = <&mo 1>;
             key-positions = <13 12>;
         };
+
+        mouse_btn1 {
+            bindings = <&mkp LCLK>;
+            key-positions = <16 17>;
+        };
+
+        mouse_btn2 {
+            bindings = <&mkp MB2>;
+            key-positions = <17 18>;
+        };
+
+        mouse_btn3 {
+            bindings = <&mkp MB3>;
+            key-positions = <16 17 18>;
+        };
+
+        mouse_btn4 {
+            bindings = <&mkp MB4>;
+            key-positions = <26 27>;
+        };
+
+        mouse_btn5 {
+            bindings = <&mkp MB5>;
+            key-positions = <28 27>;
+        };
     };
 
     keymap {
