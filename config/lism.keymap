@@ -106,7 +106,7 @@
 &mt LEFT_SHIFT LANGUAGE_2  &kp LCTRL  &kp LEFT_ALT  &trans  &mt LEFT_COMMAND SPACE  &lt 3 ESC    &kp BACKSPACE  &lt 2 ENTER  &trans  &kp RIGHT_ALT  &lt 5 TAB  &mt RIGHT_SHIFT LANGUAGE_1
             >;
 
-            sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
         };
 
         kigo {
