@@ -137,10 +137,10 @@
             status = "reserved";
             display-name = "appLayer";
             bindings = <
-&trans                 &trans                        &trans                        &trans                        &trans                                          &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LG(LC(NUMBER_9))))  &kp LS(LA(LC(LG(NUMBER_1))))                    &trans  &trans  &trans  &trans  &trans
-&trans                 &trans                        &kp LA(LG(C))                 &kp LS(LA(LC(LG(NUMBER_8))))  &kp LS(LA(LC(LG(M))))                           &trans  &trans  &trans  &trans  &trans
-&trans                 &trans                        &trans                        &trans                        &trans                        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans                 &trans                        &trans                        &trans                        &trans                                          &kp LS(LA(LC(LG(NUMBER_4))))  &kp LC(LA(LG(NUMBER_4)))  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &trans
+&kp LS(LA(LC(LG(C))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LG(LC(NUMBER_9))))  &kp LS(LA(LC(LG(NUMBER_1))))                    &trans                        &trans                    &trans                &trans                &trans
+&trans                 &trans                        &kp LA(LG(C))                 &kp LS(LA(LC(LG(NUMBER_8))))  &kp LS(LA(LC(LG(M))))                           &kp K_MUTE                    &kp C_VOL_DN              &kp C_VOL_UP          &trans                &kp LA(ESC)
+&trans                 &trans                        &trans                        &trans                        &trans                        &trans    &trans  &trans                        &trans                    &trans                &trans                &trans
             >;
         };
 
