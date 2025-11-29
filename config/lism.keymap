@@ -82,6 +82,16 @@
             bindings = <&mkp MB5>;
             key-positions = <28 27>;
         };
+
+        layer4 {
+            bindings = <&mo 4>;
+            key-positions = <24 20>;
+        };
+
+        layer4-r {
+            bindings = <&to 4>;
+            key-positions = <25 29>;
+        };
     };
 
     keymap {
@@ -139,7 +149,7 @@
             bindings = <
 &none        &none           &none  &none  &bt BT_CLR                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &none        &none           &none  &none  &none                                &none         &none         &none         &none         &none
-&sys_reset   &none           &none  &none  &none                                &none         &none         &none         &none         &sys_reset
+&trans       &none           &none  &none  &none                                &none         &none         &none         &none         &trans
 &bootloader  &bt BT_CLR_ALL  &none  &none  &none       &none    &studio_unlock  &none         &none         &none         &none         &bootloader
             >;
         };
@@ -158,9 +168,9 @@
             status = "reserved";
             display-name = "Mark Layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans          &msc SCRL_UP     &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans          &msc SCRL_DOWN   &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &msc SCRL_DOWN  &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &msc SCRL_UP    &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans           &trans  &trans
             >;
         };
