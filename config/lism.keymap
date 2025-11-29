@@ -48,14 +48,14 @@
     combos {
         compatible = "zmk,combos";
 
-        layer1 {
-            bindings = <&to 1>;
-            key-positions = <35 13>;
-        };
-
         tab {
             bindings = <&kp TAB>;
             key-positions = <31 32>;
+        };
+
+        layer1 {
+            bindings = <&mo 1>;
+            key-positions = <13 12>;
         };
     };
 
