@@ -55,7 +55,7 @@
 
         layer1 {
             bindings = <&mo 1>;
-            key-positions = <13 12>;
+            key-positions = <30 35>;
         };
 
         mouse_btn1 {
