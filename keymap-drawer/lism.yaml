@@ -12,15 +12,15 @@ layers:
   - O
   - P
   - A
-  - {t: S, h: LALT}
-  - {t: D, h: LSHIFT}
-  - {t: F, h: LGUI}
-  - {t: G, h: LCTRL}
-  - {t: H, h: RCTRL}
-  - {t: J, h: RGUI}
-  - {t: K, h: RSHIFT}
-  - {t: L, h: RALT}
-  - {t: ;, h: Mouse Layer}
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: '-', h: Default Layer}
   - Z
   - X
   - C
@@ -32,60 +32,17 @@ layers:
   - .
   - {t: /, h: Number Layer}
   - {t: LANGUAGE 2, h: LEFT SHIFT}
-  - {t: Mouse Layer, h: toggle}
-  - {t: TAB, h: Mouse Layer}
-  - Sft+Gui+4
+  - LCTRL
+  - LEFT ALT
+  - {t: ▽, type: trans}
   - {t: SPACE, h: LEFT COMMAND}
-  - {t: ESC, h: Mark Layer}
+  - {t: ESC, h: deviceLayer}
   - BS
   - {t: ENTER, h: Mark Layer}
-  - Sft+Gui+4
-  - F7
-  - F10
+  - {t: ▽, type: trans}
+  - RIGHT ALT
+  - {t: TAB, h: scroll}
   - {t: LANGUAGE 1, h: RIGHT SHIFT}
-  Mouse Layer:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MB5'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB3'
-  - '&mkp MB2'
-  - {type: held}
-  - '&mkp MB4'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&msc MOVE_Y(15)'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   Number Layer:
   - '!'
   - '@'
@@ -138,8 +95,8 @@ layers:
   - '&mkp MB4'
   - '&mkp MB5'
   - ↑
-  - '#'
-  - $
+  - Gui+W
+  - Gui+R
   - /
   - '4'
   - '5'
@@ -148,8 +105,8 @@ layers:
   - HOME
   - ←
   - →
-  - '"'
-  - \
+  - Ctl+Sft+TAB
+  - Ctl+TAB
   - ':'
   - '1'
   - '2'
@@ -157,22 +114,22 @@ layers:
   - '%'
   - END
   - ↓
-  - {t: ▽, type: trans}
+  - ESC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
   - PERIOD
   - {t: ▽, type: trans}
+  - '0'
+  - PERIOD
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Device Layer:
+  deviceLayer:
   - ''
   - ''
   - ''
@@ -193,7 +150,7 @@ layers:
   - ''
   - ''
   - ''
-  - Reset
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -202,19 +159,121 @@ layers:
   - ''
   - ''
   - ''
-  - Reset
+  - {t: ▽, type: trans}
   - Boot
   - BT CLR ALL
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - '&studio_unlock'
   - ''
   - ''
   - ''
   - ''
   - Boot
+  Auto Mouse Layer:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB4'
+  - {t: ▽, type: trans}
+  - '&mkp MB5'
+  - {t: ▽, type: trans}
+  - '&mkp MB5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - {t: '&mkp MB4', type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  scroll:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_UP'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_RIGHT'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&msc SCRL_DOWN'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
 combos:
-- p: [35, 13]
-  k: {t: Number Layer, h: toggle}
+- p: [31, 32]
+  k: TAB
+- p: [30, 35]
+  k: Number Layer
+- p: [16, 17]
+  k: '&mkp LCLK'
+- p: [17, 18]
+  k: '&mkp MB2'
+- p: [16, 17, 18]
+  k: '&mkp MB3'
+- p: [26, 27]
+  k: '&mkp MB4'
+- p: [28, 27]
+  k: '&mkp MB5'
+- p: [24, 20]
+  k: Auto Mouse Layer
+- p: [25, 29]
+  k: {t: Auto Mouse Layer, h: toggle}
