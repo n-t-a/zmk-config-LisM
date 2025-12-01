@@ -166,7 +166,7 @@
 
         scroll {
             status = "reserved";
-            display-name = "Mark Layer";
+            display-name = "scroll Layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &msc SCRL_DOWN   &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans  &trans
