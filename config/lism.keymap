@@ -124,10 +124,10 @@
         yajirushi-suji {
             display-name = "Mark Layer";
             bindings = <
-&kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                      &mkp MB4  &mkp MB5  &kp UP     &kp LG(W)        &kp LG(R)
-&kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS                       &kp HOME  &kp LEFT  &kp RIGHT  &kp LC(LS(TAB))  &kp LC(TAB)
-&kp COLON     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT                    &kp END   &kp DOWN  &kp ESC    &trans           &trans
-&trans        &kp NUMBER_0  &kp PERIOD    &trans        &trans       &trans    &trans  &trans    &trans    &trans     &trans           &trans
+&kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp MINUS                           &mkp MB4  &mkp MB5  &kp UP     &kp LG(W)        &kp LG(R)
+&kp SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS                            &kp HOME  &kp LEFT  &kp RIGHT  &kp LC(LS(TAB))  &kp LC(TAB)
+&kp COLON     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERCENT                         &kp END   &kp DOWN  &kp ESC    &trans           &trans
+&trans        &kp NUMBER_0  &kp PERIOD    &trans        &kp NUMBER_0  &kp PERIOD    &trans  &trans    &trans    &trans     &trans           &trans
             >;
 
             sensor-bindings = <&encoder_kp K_VOLUME_DOWN K_VOLUME_UP>;
