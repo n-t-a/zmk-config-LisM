@@ -164,7 +164,7 @@
             >;
         };
 
-        scroll {
+        sukuroru {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &msc SCRL_UP     &trans  &trans
 &trans  &trans  &trans  &trans  &trans                    &trans  &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans  &trans
