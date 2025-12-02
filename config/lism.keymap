@@ -73,16 +73,6 @@
             key-positions = <16 17 18>;
         };
 
-        mouse_btn4 {
-            bindings = <&mkp MB4>;
-            key-positions = <26 27>;
-        };
-
-        mouse_btn5 {
-            bindings = <&mkp MB5>;
-            key-positions = <28 27>;
-        };
-
         layer4 {
             bindings = <&mo 4>;
             key-positions = <24 20>;
