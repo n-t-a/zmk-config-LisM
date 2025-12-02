@@ -7,11 +7,11 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
-    tapping-term-ms = <160>;
+    tapping-term-ms = <180>;
     flavor = "balanced";
 };
 
-&lt { quick-tap-ms = <200>; };
+&lt { quick-tap-ms = <250>; };
 
 / {
     macros {
@@ -144,13 +144,13 @@
             >;
         };
 
-        keyboard {
+        keyBoard {
             display-name = "deviceLayer";
             bindings = <
-&none        &none           &none  &none  &bt BT_CLR                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&none        &none           &none  &none  &none                                &none         &none         &none         &none         &none
-&trans       &none           &none  &none  &none                                &none         &none         &none         &none         &trans
-&bootloader  &bt BT_CLR_ALL  &none  &none  &none       &none    &studio_unlock  &none         &none         &none         &none         &bootloader
+&none        &none           &none  &none  &bt BT_CLR                    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none        &none           &none  &none  &none                         &none         &none         &none         &none         &none
+&trans       &none           &none  &none  &none                         &none         &none         &none         &none         &trans
+&bootloader  &bt BT_CLR_ALL  &none  &none  &trans      &trans    &trans  &trans        &none         &none         &none         &bootloader
             >;
         };
 
