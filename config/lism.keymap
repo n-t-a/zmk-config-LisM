@@ -92,6 +92,21 @@
             bindings = <&mo 4>;
             key-positions = <25 29>;
         };
+
+        cmd_opt {
+            bindings = <&kp LA(LEFT_GUI)>;
+            key-positions = <26 27>;
+        };
+
+        cmd_ctr {
+            bindings = <&kp LC(LEFT_GUI)>;
+            key-positions = <27 28>;
+        };
+
+        cmd_opt_ctr_shift {
+            bindings = <&kp LS(LC(LA(LEFT_GUI)))>;
+            key-positions = <26 27 28>;
+        };
     };
 
     keymap {
