@@ -187,7 +187,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans           &trans          &trans  &trans
             >;
 
-            label = "scrollLayer";
             sensor-bindings = <&encoder_msc MOVE_Y(-5) MOVE_Y(-5)>;
         };
     };
