@@ -31,11 +31,7 @@
         cmd_opt: cmd_opt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_GUI>,
-                <&macro_press>,
-                <&kp LEFT_ALT>,
-                <&macro_press>;
+            bindings = <&kp LEFT_GUI>, <&macro_press>, <&kp LEFT_ALT>;
 
             label = "CMD_OPT";
         };
@@ -120,21 +116,6 @@
             bindings = <&mo 4>;
             key-positions = <25 29>;
         };
-
-        cmd_opt {
-            bindings = <&cmd_opt>;
-            key-positions = <26 27>;
-        };
-
-        cmd_ctr {
-            bindings = <&cmd_ctr>;
-            key-positions = <27 28>;
-        };
-
-        cmd_opt_ctr_shift {
-            bindings = <&cmd_opt_ctr>;
-            key-positions = <26 27 28>;
-        };
     };
 
     keymap {
@@ -143,10 +124,10 @@
         default {
             display-name = "Default Layer";
             bindings = <
-&kp Q                      &kp W      &kp E         &kp R   &kp T                                               &kp Y        &kp U   &kp I          &kp O    &lt 5 P
-&kp A                      &kp S      &kp D         &kp F   &kp G                                               &kp H        &kp J   &kp K          &kp L    &lt 6 MINUS
-&kp Z                      &kp X      &kp C         &kp V   &kp B                                               &kp N        &kp M   &kp COMMA      &kp DOT  &lt 1 SLASH
-&mt LEFT_SHIFT LANGUAGE_2  &kp LCTRL  &kp LEFT_ALT  &trans  &mt LEFT_COMMAND SPACE  &lt 3 ESC    &kp BACKSPACE  &lt 2 ENTER  &trans  &kp RIGHT_ALT  &kp TAB  &mt RIGHT_SHIFT LANGUAGE_1
+&kp Q                      &kp W      &kp E         &kp R   &kp T                                               &kp Y        &kp U   &kp I      &kp O         &lt 5 P
+&kp A                      &kp S      &kp D         &kp F   &kp G                                               &kp H        &kp J   &kp K      &kp L         &lt 6 MINUS
+&kp Z                      &kp X      &kp C         &kp V   &kp B                                               &kp N        &kp M   &kp COMMA  &kp DOT       &lt 1 SLASH
+&mt LEFT_SHIFT LANGUAGE_2  &kp LCTRL  &kp LEFT_ALT  &trans  &mt LEFT_COMMAND SPACE  &lt 3 ESC    &kp BACKSPACE  &lt 2 ENTER  &trans  &cmd_opt   &cmd_opt_ctr  &mt RIGHT_SHIFT LANGUAGE_1
             >;
 
             sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
