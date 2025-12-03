@@ -89,12 +89,12 @@
         };
 
         cmd_ctr {
-            bindings = <&kp LC(LGUI)>;
+            bindings = <&kp LG(LCTRL)>;
             key-positions = <27 28>;
         };
 
         cmd_opt_ctr_shift {
-            bindings = <&kp LC(LA(LS(LGUI)))>;
+            bindings = <&kp LA(LC(LG(LEFT_SHIFT)))>;
             key-positions = <26 27 28>;
         };
     };
