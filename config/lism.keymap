@@ -45,16 +45,6 @@
 
             label = "CMD_CTR";
         };
-
-        cmd_opt_ctr: cmd_opt_ctr {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_pause_for_release>,
-                <&kp LEFT_GUI &kp LEFT_ALT &kp LEFT_CONTROL>;
-
-            label = "CMD_OPT_CTR";
-        };
     };
 
     behaviors {
@@ -70,6 +60,15 @@
             compatible = "zmk,behavior-sensor-rotate-var";
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;
+        };
+
+        cmd_opt_ctr: cmd_opt_ctr {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CMD_OPT_CTR";
+            bindings = <&none>, <&none>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI|MOD_LALT|MOD_LCTL)>;
         };
     };
 
