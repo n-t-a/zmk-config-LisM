@@ -27,6 +27,44 @@
                 <&macro_release>,
                 <&kp CAPSLOCK>;
         };
+
+        cmd_opt: cmd_opt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_GUI>,
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>;
+
+            label = "CMD_OPT";
+        };
+
+        cmd_ctr: cmd_ctr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_GUI>,
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_press>;
+
+            label = "CMD_CTR";
+        };
+
+        cmd_opt_ctr: cmd_opt_ctr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_GUI>,
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_press>;
+
+            label = "CMD_OPT_CTR";
+        };
     };
 
     behaviors {
@@ -84,17 +122,17 @@
         };
 
         cmd_opt {
-            bindings = <&kp LA(LEFT_WIN)>;
+            bindings = <&cmd_opt>;
             key-positions = <26 27>;
         };
 
         cmd_ctr {
-            bindings = <&kp LG(LEFT_CONTROL)>;
+            bindings = <&cmd_ctr>;
             key-positions = <27 28>;
         };
 
         cmd_opt_ctr_shift {
-            bindings = <&kp LA(LC(LEFT_WIN))>;
+            bindings = <&cmd_opt_ctr>;
             key-positions = <26 27 28>;
         };
     };
