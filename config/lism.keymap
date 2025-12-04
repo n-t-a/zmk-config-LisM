@@ -50,12 +50,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <31 32>;
+            key-positions = <23 22>;
         };
 
         layer1 {
             bindings = <&mo 1>;
-            key-positions = <30 35>;
+            key-positions = <13 12>;
         };
 
         mouse_btn1 {
