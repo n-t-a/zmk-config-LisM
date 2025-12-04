@@ -85,7 +85,12 @@
 
         layer1_02 {
             bindings = <&mo 1>;
-            key-positions = <10 34>;
+            key-positions = <13 12>;
+        };
+
+        layer1_2 {
+            bindings = <&mo 1>;
+            key-positions = <34 35>;
         };
     };
 
