@@ -82,6 +82,21 @@
             bindings = <&bootloader>;
             key-positions = <7 8 9>;
         };
+
+        cmd_opt {
+            bindings = <&mt LA(LEFT_GUI) TAB>;
+            key-positions = <26 27>;
+        };
+
+        cmd_ctr {
+            bindings = <&mt LC(LEFT_GUI) TAB>;
+            key-positions = <27 28>;
+        };
+
+        cmd_opt_shift {
+            bindings = <&mt LS(LA(LG(LEFT_GUI))) TAB>;
+            key-positions = <26 27 28>;
+        };
     };
 
     keymap {
