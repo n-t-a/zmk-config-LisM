@@ -27,6 +27,14 @@
                 <&macro_release>,
                 <&kp CAPSLOCK>;
         };
+
+        cmd_opt_shift: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_pause_for_release>, <&kp LS(LA(LG(LEFT_GUI)))>;
+
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -86,6 +94,11 @@
         layer3 {
             bindings = <&mo 3>;
             key-positions = <35 37>;
+        };
+
+        cmd_opt_shift {
+            bindings = <&cmd_opt_shift>;
+            key-positions = <26 27 28>;
         };
     };
 
