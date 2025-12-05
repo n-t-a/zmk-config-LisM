@@ -80,7 +80,7 @@
 
         layer3 {
             bindings = <&mo 3>;
-            key-positions = <37 34>;
+            key-positions = <34 35>;
         };
     };
 
