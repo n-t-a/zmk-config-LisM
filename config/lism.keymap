@@ -31,7 +31,9 @@
         cmd_opt_shift: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_pause_for_release>, <&kp LS(LA(LG(LEFT_GUI)))>;
+            bindings =
+                <&macro_pause_for_release>,
+                <&kp LEFT_GUI &kp LEFT_ALT &kp LEFT_SHIFT>;
 
             label = "NEW_MACRO";
         };
