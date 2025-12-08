@@ -68,19 +68,19 @@
             key-positions = <16 17 18>;
         };
 
-        boot-l {
+        bootloader {
             bindings = <&bootloader>;
-            key-positions = <0 1 2>;
-        };
-
-        boot-r {
-            bindings = <&bootloader>;
-            key-positions = <7 8 9>;
+            key-positions = <20 29>;
         };
 
         layer3 {
             bindings = <&mo 3>;
             key-positions = <34 35>;
+        };
+
+        layer4 {
+            bindings = <&mo 4>;
+            key-positions = <0 4>;
         };
     };
 
@@ -137,10 +137,10 @@
         device {
             display-name = "deviceLayer";
             bindings = <
-&none        &none           &none  &none  &bt BT_CLR                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&none        &none           &none  &none  &none                          &none         &none         &none         &none         &none
-&trans       &none           &none  &none  &bootloader                    &bootloader   &none         &none         &none         &trans
-&bootloader  &bt BT_CLR_ALL  &none  &none  &trans       &trans    &trans  &trans        &none         &none         &none         &bootloader
+&none        &none   &none  &none  &trans                         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none        &none   &none  &none  &none                          &bt BT_CLR      &none         &none         &none         &none
+&trans       &none   &none  &none  &bootloader                    &bt BT_CLR_ALL  &none         &none         &none         &trans
+&bootloader  &trans  &none  &none  &trans       &trans    &trans  &trans          &none         &none         &none         &bootloader
             >;
         };
 
