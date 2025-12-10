@@ -101,7 +101,7 @@
 &mt LEFT_SHIFT LANGUAGE_2  &kp LCTRL  &kp LEFT_ALT  &trans  &mt LEFT_COMMAND SPACE  &lt 1 ESC    &kp BACKSPACE  &lt 2 ENTER  &trans  &kp TAB    &kp RIGHT_ALT  &mt RIGHT_SHIFT LANGUAGE_1
             >;
 
-            sensor-bindings = <&encoder_msc SCRL_LEFT SCRL_RIGHT>;
+            sensor-bindings = <&encoder_msc SCRL_DOWN SCRL_UP>;
         };
 
         symbol {
@@ -167,7 +167,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans           &trans          &trans  &trans
             >;
 
-            sensor-bindings = <&encoder_msc MOVE_Y(-5) MOVE_Y(-5)>;
+            sensor-bindings = <&encoder_msc SCRL_RIGHT SCRL_LEFT>;
         };
     };
 };
