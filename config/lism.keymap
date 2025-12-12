@@ -43,22 +43,6 @@
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;
         };
-
-        tap_dance01: tap_dance01 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE01";
-            #binding-cells = <0>;
-            bindings = <&lt 1 ESC>, <&mo 3>;
-
-            tapping-term-ms = <150>;
-        };
-
-        tap_dance_lang: tap_dance_lang {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_LANG";
-            #binding-cells = <0>;
-            bindings = <&mt LANGUAGE_1 RIGHT_SHIFT>, <&kp LANGUAGE_2>;
-        };
     };
 
     combos {
