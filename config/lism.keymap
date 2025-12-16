@@ -7,11 +7,11 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
-    tapping-term-ms = <190>;
+    tapping-term-ms = <200>;
     flavor = "balanced";
 };
 
-&lt { quick-tap-ms = <245>; };
+&lt { quick-tap-ms = <400>; };
 
 / {
     macros {
