@@ -43,6 +43,17 @@
             #sensor-binding-cells = <2>;
             bindings = <&kp>, <&kp>;
         };
+
+        repeat_enter: repeat_enter {
+            compatible = "zmk,behavior-hold-tap";
+            label = "REPEAT_ENTER";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     combos {
@@ -95,10 +106,10 @@
         default {
             display-name = "Default Layer";
             bindings = <
-&kp Q                      &kp W      &kp E             &kp R   &kp T                                               &kp Y        &kp U   &kp I      &kp O          &kp P
-&kp A                      &kp S      &kp D             &kp F   &kp G                                               &kp H        &kp J   &kp K      &kp L          &lt 6 MINUS
-&kp Z                      &kp X      &kp C             &kp V   &kp B                                               &kp N        &kp M   &kp COMMA  &kp DOT        &lt 1 SLASH
-&mt LEFT_SHIFT LANGUAGE_2  &kp LCTRL  &mt LEFT_ALT TAB  &trans  &mt LEFT_COMMAND SPACE  &lt 1 ESC    &kp BACKSPACE  &lt 2 ENTER  &trans  &lt 3 TAB  &kp RIGHT_ALT  &mt RIGHT_SHIFT LANGUAGE_1
+&kp Q                      &kp W      &kp E             &kp R   &kp T                                               &kp Y                  &kp U   &kp I      &kp O          &kp P
+&kp A                      &kp S      &kp D             &kp F   &kp G                                               &kp H                  &kp J   &kp K      &kp L          &lt 6 MINUS
+&kp Z                      &kp X      &kp C             &kp V   &kp B                                               &kp N                  &kp M   &kp COMMA  &kp DOT        &lt 1 SLASH
+&mt LEFT_SHIFT LANGUAGE_2  &kp LCTRL  &mt LEFT_ALT TAB  &trans  &mt LEFT_COMMAND SPACE  &lt 1 ESC    &kp BACKSPACE  &repeat_enter 2 ENTER  &trans  &lt 3 TAB  &kp RIGHT_ALT  &mt RIGHT_SHIFT LANGUAGE_1
             >;
 
             sensor-bindings = <&encoder_msc SCRL_UP SCRL_DOWN>;
