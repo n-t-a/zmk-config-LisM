@@ -14,21 +14,6 @@
 &lt { quick-tap-ms = <210>; };
 
 / {
-    macros {
-        emoji: emoji_macro {
-            compatible = "zmk,behavior-macro";
-            label = "EMOJI";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp CAPSLOCK>,
-                <&macro_tap>,
-                <&kp E>,
-                <&macro_release>,
-                <&kp CAPSLOCK>;
-        };
-    };
-
     behaviors {
         encoder_msc: sensor_rotate_msc {
             compatible = "zmk,behavior-sensor-rotate-var";
@@ -79,11 +64,6 @@
             key-positions = <16 17 18>;
         };
 
-        bootloader {
-            bindings = <&bootloader>;
-            key-positions = <20 29>;
-        };
-
         layer3 {
             bindings = <&mo 3>;
             key-positions = <34 35>;
@@ -91,17 +71,12 @@
 
         layer4 {
             bindings = <&mo 4>;
-            key-positions = <20 24>;
+            key-positions = <30 35>;
         };
 
         layer4-r {
             bindings = <&mo 4>;
-            key-positions = <25 29>;
-        };
-
-        space {
-            bindings = <&kp SPACE>;
-            key-positions = <23 22>;
+            key-positions = <36 41>;
         };
     };
 
@@ -123,10 +98,10 @@
         symbol {
             display-name = "Number Layer";
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN    &kp POUND     &kp DOLLAR        &kp PERCENT                          &kp MINUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE        &kp RIGHT_BRACE
-&kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                    &kp PLUS    &kp EQUAL             &kp DOUBLE_QUOTES      &kp COLON             &kp SEMICOLON
-&trans           &trans         &trans        &trans            &caps_word                           &caps_word  &kp GRAVE             &kp SQT                &kp NON_US_BACKSLASH  &kp PIPE
-&trans           &trans         &trans        &trans            &trans             &trans    &trans  &trans      &trans                &trans                 &trans                &trans
+&kp EXCLAMATION  &kp AT_SIGN    &kp POUND     &kp DOLLAR        &kp PERCENT                          &kp MINUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE
+&kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                    &kp PLUS    &kp EQUAL             &kp DOUBLE_QUOTES      &kp COLON       &kp SEMICOLON
+&trans           &trans         &trans        &trans            &caps_word                           &caps_word  &kp GRAVE             &kp SQT                &kp BACKSLASH   &kp PIPE
+&trans           &trans         &trans        &trans            &trans             &trans    &trans  &trans      &trans                &trans                 &trans          &trans
             >;
 
             sensor-bindings = <&encoder_kp C_VOL_UP C_VOL_DN>;
@@ -158,10 +133,10 @@
         device {
             display-name = "deviceLayer";
             bindings = <
-&none        &none   &none  &none  &trans                         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&bootloader  &none   &none  &none  &none                          &bt BT_CLR      &none         &none         &none         &bootloader
-&trans       &none   &none  &none  &bootloader                    &bt BT_CLR_ALL  &none         &none         &none         &trans
-&bootloader  &trans  &none  &none  &trans       &trans    &trans  &trans          &none         &none         &none         &bootloader
+&none        &none   &none  &none  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&bootloader  &none   &none  &none  &none                          &none         &none         &none         &none         &bootloader
+&trans       &none   &none  &none  &bootloader                    &bt BT_CLR    &none         &none         &none         &trans
+&bootloader  &trans  &none  &none  &trans       &trans    &trans  &trans        &none         &none         &none         &bootloader
             >;
         };
 
